@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>涨停跌停</title>
+    <script type="text/javascript" src="ztdt.js"></script>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
+    <link rel="stylesheet/less" type="text/css" href="ztdt.less" />
+    <script>
+    less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false,
+        rootpath: ":/a.com/"
+    };
+    </script>
+    <script src="http://cdn.bootcss.com/less.js/1.7.0/less.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="home">HOME</div>
+            <div class="menu active">ZTDT</div>
+            <div class="menu">BL</div>
+            <div class="menu">ME</div>
+        </div>
+    </header>
+    <div class="content">
+        <section class="filter"></section>
+        <section class="zt">
+        </section>
+        <section class="dt"></section>
+    </div>
+    <footer>
+        
+    </footer>
+    <iframe id="stock" src=""></iframe>
+    <script type="text/javascript" src="ztdt.js"></script>
+    
+</body>
+
+</html>
